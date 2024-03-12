@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PTT Software Co.,Ltd</title>
+  <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png" sizes="32*32">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+<!-- <fontawosom> -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style type="text/css">
+    *{
+      box-sizing: border-box;
+    }
+
+    body{
+      padding: 0;
+      margin: 0;
+    }
+
+    .banners{
+      height: 100vh;
+      background: linear-gradient(
+        20deg,
+        steelblue 30%,
+        skyblue 0% 100%
+
+      );
+      background-size: 5%;
+      transition: all 2s;
+    }
+
+    /*.banners:hover{
+      background-size:5.5%;
+      background-position: center;
+    }*/
+
+    .cardhovers:hover{
+      box-shadow: -7px 5px 5px rgba(0,0,0,0.3);
+    }
+
+    .map{
+    	width: 100%;
+    	/*height: 250px;*/
+    	height: 40vh;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Start Header Section -->
+  <header>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" >
+      <a href="#" class="navbar-brand mx-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png" width="50" alt="sitelog"/>
+        <span class="ms-2">PTT software Co.,Ltd</span>
+      </a>
+       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><i class="navbar-toggler-icon"></i></button>
+
+      
+
+      <div id="nav" class="navbar-collapse collapse justify-content-between" >
+        <ul class="navbar-nav px-3">
+          <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">Home</a></li>
+
+          <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">Clients</a></li>
+
+          <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">About</a></li>
+
+          <li class="dropdown">
+            <a href="#" class="nav-link text-uppercase fw-bold" data-bs-toggle="dropdown">Software</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Android App</a></li>
+
+              <li><a href="#" class="dropdown-item">ISO App</a></li>
+
+              <li><a href="#" class="dropdown-item">Linux App</a></li>
+
+              <li><a href="#" class="dropdown-item">Windows App</a></li>
+            </ul>
+
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-uppercase fw-bold">Contact</a></li>
+        </ul>
+
+        <div class="px-3">
+        <a href="#" class="btn btn-outline-light btn-sm rounded-0">Sign-up</a>
+      </div>
+      </div>
+    </nav>
+
+    <!-- end navbar -->
+
+    <!-- h1 to h6
+    display-1 to display-6 -->
+
+    <!-- start banner -->
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center banners">
+        <div class="col-md-10 text-center">
+          <h1 class="display-2"><span class="text-primary text-uppercase ">ptt</span> <span class="text-capitalize text-white">software development company<span></h1>
+            <h2 class="fst-italic fw-light text-light">We help companies to digitalize thier business.</h2>
+            <p class="text-secondary">Properly set process. Transparent cooperation. Predictable delivery.</p>
+            <a href="#" class="btn btn-warning btn-lg rounded-0">Get In Touch</a>
+        </div>
+      </div>
+      
+    </div>
+    <!-- end banner -->
+  </header>
+  <!-- End Header Section -->
+
+<!-- Start Our Client Section -->
+  <section class="bg-light p-5">
+    <div class="container-fluid">
+      <!-- start title -->
+        <div class="col-md-12 text-center">
+          <h2 class="text-warning display-4">Our Clients</h2>
+          <p class="text-muted lead">Projects We Successfully Developed. One look is worth a thousand words.</p>
+          
+        </div>
+      <!-- end title   -->    <!-- lead means letter spancing -->
+
+      <div class="row text-center">
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card bg-info cardhovers">
+            <!-- <div class="card-header">a</div> -->
+            <div class="card-body">
+              <h5 class="card-title">Toyota</h5>
+              <h6 class="card-subtitle text-muted mb-3">Vehicles</h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+              <a href="#" class="card-link">Website</a>
+              <a href="#" class="card-link">Contact</a>
+            </div>
+            <!-- <div class="card-footer">c</div> -->
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-3 ">
+          <div class="card bg-info cardhovers"> 
+            <div class="card-body">
+              <h5 class="card-title">Mazda</h5>
+              <h6 class="card-subtitle text-muted mb-3">Vehicles</h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+              <a href="#" class="card-link">Website</a>
+              <a href="#" class="card-link">Contact</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card bg-info cardhovers">
+           
+            <div class="card-body">
+              <h5 class="card-title">KIA</h5>
+              <h6 class="card-subtitle text-muted mb-3">Vehicles</h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+              <a href="#" class="card-link">Website</a>
+              <a href="#" class="card-link">Contact</a>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card bg-info cardhovers">
+         
+            <div class="card-body">
+              <h5 class="card-title">Suzuki</h5>
+              <h6 class="card-subtitle text-muted mb-3">Vehicles</h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+              <a href="#" class="card-link">Website</a>
+              <a href="#" class="card-link">Contact</a>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card bg-warning cardhovers">
+            
+            <div class="card-body">
+              <h5 class="card-title">Samsaung</h5>
+              <h6 class="card-subtitle text-muted mb-3">Vehicles</h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+              <a href="#" class="card-link">Website</a>
+              <a href="#" class="card-link">Contact</a>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card bg-warning cardhovers">
+         
+            <div class="card-body">
+              <h5 class="card-title">Mi</h5>
+              <h6 class="card-subtitle text-muted mb-3">Vehicles</h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+              <a href="#" class="card-link">Website</a>
+              <a href="#" class="card-link">Contact</a>
+            </div>
+        
+          </div>
+        </div>
+
+
+<div class="col-md-3 col-sm-6 mb-3">
+          <div class="card bg-warning cardhovers">
+         
+            <div class="card-body">
+              <h5 class="card-title">Sony</h5>
+              <h6 class="card-subtitle text-muted mb-3">Vehicles</h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+              <a href="#" class="card-link">Website</a>
+              <a href="#" class="card-link">Contact</a>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 mb-3">
+          <div class="card bg-warning cardhovers">
+            <!-- <div class="card-header">a</div> -->
+            <div class="card-body">
+              <h5 class="card-title">Oppo</h5>
+              <h6 class="card-subtitle text-muted mb-3">Vehicles</h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+              <a href="#" class="card-link">Website</a>
+              <a href="#" class="card-link">Contact</a>
+            </div>
+            <!-- <div class="card-footer">c</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <!-- End Our Client Section -->
+
+
+  <!-- Start Software Section -->
+  <section>
+    <div class="container-fluid">
+      <!-- strat title -->
+      <div class="col-md-12 text-center">
+        <h2 class="text-warning display-4">Software</h2>
+          <p class="text-muted lead">Projects We Successfully Developed. One look is worth a thousand words.</p>
+      </div>
+      <!-- end title -->
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <img src="https://imgeng.jagran.com/images/2023/jun/Android%2014%20(1)1686146518996.jpg" class="img-thumbnail" alt="andriod">
+          <h3 class="text-warning my-3">Android Application</h3>
+          <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+        </div>
+
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <img src="https://mytechmyanmar.com/wp-content/uploads/2020/04/appstore.jpg" class="img-thumbnail" alt="ios">
+          <h3 class="text-warning my-3">IOS Application</h3>
+          <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+        </div>
+
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <img src="https://i.ytimg.com/vi/8WbyB_2HthM/maxresdefault.jpg" class="img-thumbnail" alt="linuex">
+          <h3 class="text-warning my-3">Linux Application</h3>
+          <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+        </div>
+
+         <div class="col-lg-3 col-md-6 col-sm-12">
+          <img src="https://i.pcmag.com/imagery/lineups/06xskoAKsVIlA7WdtvUGQmT-1.1577756249.fit_lim.size_1182x667.jpg" class="img-thumbnail" alt="windows">
+          <h3 class="text-warning my-3">Windows Application</h3>
+          <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Software Section -->
+
+  <!-- Start Team Section -->
+  <section class="bg-secondary p-5">
+
+    <div class="container-fluid">
+
+      <!-- start title -->
+      <div class="col-md-12 text-center">
+        <h2 class="text-warning display-4">Team</h2>
+      </div>
+      <!-- end title -->
+      <div class="row">
+
+        <div class="col-lg-4 col-sm-10 mb-3 mx-auto">
+          <div class="card">
+          	<img src="https://www.boemagazine.com/wp-content/uploads/2019/11/blur-businesswoman-caucasian-941555.jpg" alt="user1">
+          	
+            <div class="card-body">
+            	
+              <h3 class="card-title">Ms.Khin Myat Noe</h3>
+              <p class="card-subtitle lead">Operation Manager</p>
+            </div>
+
+
+<!-- Myat, [3/7/2024 7:38 PM] -->
+<div class="card-footer">
+	<div class="float-end">
+              <a href="#" target="_blank"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+
+              <a href="" target="_blank"><i class="fab fa-twitter fa-2x text-info"></i></a>
+
+              <a href="" target="_blank"><i class="fab fa-youtube fa-2x text-danger"></i></a>
+          </div>
+              
+            </div>
+          </div>   
+        </div>
+
+        <div class="col-lg-4 col-sm-10 mb-3 mx-auto">
+          <div class="card">
+          	<img src="https://dpbnri2zg3lc2.cloudfront.net/en/wp-content/uploads/2021/01/what-is-the-difference-web-developer-web-designer.jpg" alt="user2">
+            <div class="card-body">
+              <h3 class="card-title">Mr.Htet Paing</h3>
+              <p class="card-subtitle lead">Project Manager</p>
+            </div>
+
+            <div class="card-footer">
+              <div class="float-end">
+              <a href="#" target="_blank"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+
+              <a href="" target="_blank"><i class="fab fa-twitter fa-2x text-info"></i></a>
+
+              <a href="" target="_blank"><i class="fab fa-youtube fa-2x text-danger"></i></a>
+          </div>
+              
+            </div>
+          </div>   
+        </div>
+
+        <div class="col-lg-4 col-sm-10 mb-3 mx-auto">
+          <div class="card">
+          	<img src="https://dpbnri2zg3lc2.cloudfront.net/en/wp-content/uploads/2021/01/Sam-CF.jpg" alt="user3">
+            <div class="card-body">
+              <h3 class="card-title">Mr.Pyae Phyo Paing</h3>
+              <p class="card-subtitle lead">Founder And CEO</p>
+            </div>
+
+            <div class="card-footer">
+             <div class="float-end">
+              <a href="#" target="_blank"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+
+              <a href="" target="_blank"><i class="fab fa-twitter fa-2x text-info"></i></a>
+
+              <a href="" target="_blank"><i class="fab fa-youtube fa-2x text-danger"></i></a>
+          </div>
+              
+            </div>
+          </div>   
+        </div>
+
+        
+      </div>
+
+    </div>
+</div>
+  </section>
+  <!-- End Team Section -->
+
+  <!-- Start Public Interest Section -->
+  <section class="py-5">
+
+  	<div class="container-fluid">
+  		<div class="col-md-12 text-center">
+        <h2 class="text-warning display-4">Public Interest</h2>
+          <p class="text-muted lead">Projects We Successfully Developed. One look is worth a thousand words.</p>
+      </div>
+
+      <div class="row">
+      	<div class="col-lg-6 col-sm-10 mx-auto">
+      		
+      		<h3>Ebook</h3>
+      		<div class="progress mb-3">
+      			<div class="progress-bar progress-bar-striped bg-primary" style="width:25%;" aria-vluenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+      		</div>
+      		<h3>Android Application</h3>
+      		<div class="progress mb-3">
+      			<div class="progress-bar progress-bar-striped bg-secondary" style="width:25%;" aria-vluenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+      		</div>
+      		<h3>IOS Application</h3>
+      		<div class="progress mb-3">
+      			<div class="progress-bar progress-bar-striped bg-success" style="width:15%;" aria-vluenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+      		</div>
+      		<h3>Linax Application</h3>
+      		<div class="progress mb-3">
+      			<div class="progress-bar progress-bar-striped bg-danger" style="width:5%;" aria-vluenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+      		</div>
+      		<h3>Windows Application</h3>
+      		<div class="progress mb-3">
+      			<div class="progress-bar progress-bar-striped bg-info" style="width:30%;" aria-vluenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+      		</div>
+
+      	</div>
+
+      </div>
+  	</div>
+    
+
+
+  </section>
+  <!-- End Public Interest Section -->
+
+  <!-- Start Pricing Section -->
+  <section class="bg-secondary p-5">
+    <div class="container-fluid">
+  		<div class="col-md-12 text-center">
+        <h2 class="text-warning display-4">Pricing</h2>
+          <p class="text-light lead">Projects We Successfully Developed. One look is worth a thousand words.</p>
+      </div>
+
+      <div class="row text-center">
+      	<div class="col-md-4 col-sm-10 mb-3 mx-auto">
+      		<div class="card">
+      			<div class="card-body">
+      			<h5>BLOG SITE/FREE</h5>
+      			<h6>$0/month</h6>
+      			<hr/>
+      			<ul class="list-group">
+      				<li class="list-group-item">Single User</li>
+      				<li class="list-group-item">5GB Storage</li>
+      				<li class="list-group-item">Unlimated Public Projects</li>
+      				<li class="list-group-item">Community Access</li>
+      				<li class="list-group-item">Dedicate Phone Support</li>
+      				<li class="list-group-item">Free Subdomain</li>
+      				<li class="list-group-item">Monthly Stattus Report</li>
+      				
+      			</ul>
+      			</div>
+      			<div class="card-footer">
+      				<div class="d-grid">
+      					<a href="#" class="btn btn-warning text-uppercase">checkout</a>
+      				</div>
+      			</div>
+      			
+      		</div>
+      	</div>
+      	<div class="col-md-4 col-sm-10 mb-3 mx-auto">
+      		<div class="card">
+      			<div class="card-body">
+      			<h5>ECORMACE/PLUSE</h5>
+      			<h6>$0/month</h6>
+      			<hr/>
+      			<ul class="list-group">
+      				<li class="list-group-item">Single User</li>
+      				<li class="list-group-item">5GB Storage</li>
+      				<li class="list-group-item">Unlimated Public Projects</li>
+      				<li class="list-group-item">Community Access</li>
+      				<li class="list-group-item">Dedicate Phone Support</li>
+      				<li class="list-group-item">Free Subdomain</li>
+      				<li class="list-group-item">Monthly Stattus Report</li>
+      				
+      			</ul>
+      			</div>
+      			<div class="card-footer">
+      				<div class="d-grid">
+      					<a href="#" class="btn btn-warning text-uppercase">checkout</a>
+      				</div>
+      			</div>
+      			
+      		</div>
+      	</div>
+      	<div class="col-md-4 col-sm-10 mb-3 mx-auto">
+      		<div class="card">
+      			<div class="card-body">
+      			<h5>DYNAMIC SITE/PRO</h5>
+      			<h6>$49/month</h6>
+      			<hr/>
+      			<ul class="list-group">
+      				<li class="list-group-item">Single User</li>
+      				<li class="list-group-item">5GB Storage</li>
+      				<li class="list-group-item">Unlimated Public Projects</li>
+      				<li class="list-group-item">Community Access</li>
+      				<li class="list-group-item">Dedicate Phone Support</li>
+      				<li class="list-group-item">Free Subdomain</li>
+      				<li class="list-group-item">Monthly Stattus Report</li>
+      				
+      			</ul>
+      			</div>
+      			<div class="card-footer">
+      				<div class="d-grid">
+      					<a href="#" class="btn btn-warning text-uppercase">checkout</a>
+      				</div>
+      			</div>
+      			
+      		</div>
+      	</div>
+      	
+      </div>
+  </section>
+  <!-- End Pricing Section -->
+
+  <!-- Start Contact Section -->
+  <section class="p-5">
+  	<div class="container-fluid">
+  		<div class="col-md-12 text-center">
+        <h2 class="text-warning display-4">Contact</h2>
+    </div>
+    <div class="row">
+    	<!-- offic location -->
+    	<div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-3">
+    		<div class="card">
+    			<div class="card-header">
+    				<h5 class="card-title">Office Location</h5>
+    			</div>
+    			<div class="card-body">
+    				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33601.51578558474!2d96.10782278399543!3d21.930681191748423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d3bf6d36be7%3A0x61f3c432c781a446!2sRITZ%20GRAND%20HOTEL%20MANDALAY!5e0!3m2!1sen!2smm!4v1709821672284!5m2!1sen!2smm" class="map" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    			</div>
+    			<div class="card-footer">
+    				<p>Phone : 0977458862</p>
+    				<p>Email: info@ptt.com</p>
+    				<p>Address : No.123,Aung San St,Mandalay Myanmar.</p>
+    			</div>
+    		</div>
+    		
+    	</div>
+    	<!-- office location -->
+
+    	<!-- got question -->
+    	<div class="col-lg-6 col-md-8 col-sm-10 mx-auto mb-3">
+    		<div class="text-secondary text-center">
+    			<h3>Got Question?</h3>
+    			<p>Stay Connected</p>
+    			
+    		</div>
+    		<form action="" method="">
+    			<div class="col-md-12 form-group mb-3">
+    				<label for="name">Name</label>
+    				<input type="text" name="name" id="name" class="form-control form-control-sm rounded-0" placeholder="Enter your name">
+    				
+    			</div>
+    			<div class="col-md-12 form-group mb-3">
+    				<label for="email">Email</label>
+    				<input type="text" name="email" id="email" class="form-control form-control-sm rounded-0" placeholder="Enter your email">
+    				
+    			</div>
+    			<div class="col-md-12 form-group mb-3">
+    				<label for="message">Message</label>
+    				<textarea type="text" name="message" id="message" class="form-control form-control-sm rounded-0" placeholder="Enter your message" rows="3"></textarea>
+    				
+    			</div>
+    			<div class="d-grid">
+    				<button type="submit" class="btn btn-warning rounded-0">Submit</button>
+    			</div>
+    		</form>
+    		</div>
+    		
+    	</div>
+    	<!-- got question -->
+    </div>
+          
+  	</div>
+    
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Start Footer Section -->
+  <footer class="bg-dark py-3">
+    <div class="container-fluid">
+    	<div class="col-12 text-center">
+    		<p class="text-white">&copy; Copyright <span id="autoyear"> - Make by PTT Co.,Ltd.</span></p>
+    	</div>
+    	
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+
+
+
+
+
+
+<!-- BOOTSTRAP  -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+   <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    
+    const autoyear = document.getElementByID('autoyear');
+    const getyear = new Date().getUTCFullYear();
+    autoyear.textContent = getyear;
+
+  </script>
+
+</body>
+</html>
+
+<!-- 6TM -->
